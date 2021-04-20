@@ -164,6 +164,7 @@ downGitModule.factory('downGitService', [
 
                     }, function(error) {
                         console.log("probable big file.");
+                        console.log(error);
                         downloadFile("https://raw.githubusercontent.com/"+repoInfo.author+"/"+
                                 repoInfo.repository+"/"+repoInfo.branch+"/"+repoInfo.resPath,
                                 progress, toastr);
